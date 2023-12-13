@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Tiktok Auto Like</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="login-title">Tiktok Auto Like</h1>
+      <form id="form" class="login-form">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Username / email"
+          required
+        />
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="********" required />
+
+        <div class="autolike-info">
+          <div>
+            <label for="total">Total Like</label>
+            <input
+              type="number"
+              id="total"
+              placeholder="Total Like"
+              value="5"
+              required
+            />
+          </div>
+          <div>
+            <label for="delay">Delay VT (second)</label>
+            <input
+              type="number"
+              id="delay"
+              placeholder="Delay"
+              value="5"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit" class="login-button" id="login-button">
+          Continue
+        </button>
+
+        <span>
+          *Please perform manual verification during the login process.
+        </span>
+      </form>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
